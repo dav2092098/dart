@@ -1,0 +1,665 @@
+{
+	"folder_history":
+	[
+		"/F/F/drive_r/10/LL/config",
+		"/F/F/drive_r/10/dart"
+	],
+	"last_version": 3211,
+	"last_window_id": 5,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 480.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"syntax",
+						"Set Syntax: Dart"
+					],
+					[
+						"install p",
+						"Package Control: Install Package"
+					],
+					[
+						"dart",
+						"Indentation: Reindent Lines"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/F/F/drive_r/10/dart/Sublime Text Build 3211/Data/Packages/User/Package Control.sublime-settings"
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 115.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 888.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "\nvoid main() {\n\"7\";\n\ndouble p = 3e8;\nvar q = 3.14159;\nvar r = 0xFFFFFFFF;\nvar name = \"David is my name\";\nint l = 11;\nint w = 12;\n\n\n// ======== Basics =========\nprint(\"hello world\\n\\n\");\nprint(\"It's me again\");\nprint((12/5)); /*Type inference*/\nprint(p);\nprint(r);\n\n// We can use single or dbl quotes\nprint('Calling variables within a string: $r, $p, ${name.length}');\n\nprint('The product of $l and $w is ${l*w} ');\n// We can concatenate the usual way\nprint('The product of ' + l.toString() + \" and \" + w.toString() + ' is ' + (l*w).toString());\n\n// =====================\n\n// ======== Conditionals =========\nvar height = 72;\n\n/* conditional expressions:\n* 1. condition ? expr1: expr2;\n* 2. expr1 ?? expr2; \n*/\n\n//1. \nheight < 100 ? print(\"your height: $height inches, is less than required\\n\\n\"): print('yay, youre in\\n');\n\nvar smalldim = \"Small dimensions\";\nvar bigdim = \"Big dimensions\";\nvar dim;\nif (l < w) {\ndim = smalldim;\n} else {\ndim = bigdim;\n}\n// the above is equiv to:\ndim = l < w ? smalldim:bigdim;\n\n//2. expr1 ?? expr2; \n// if expr1 is null, eval expr2 instead\n\nvar user1;\nvar user2 = user1 ?? \"David\";\nprint(user2);\n\n// Switch conditions \nvar grade = \"A\"; // must be int | String\nswitch(grade) {\ncase 'A': print(\"$grade is for Excellent\");\nbreak;\ncase 'B': print(\"$grade is for Good\");\nbreak;\ncase 'C': print(\"$grade is for Expected\");\nbreak;\ncase 'D': print(\"$grade is for needs improvement\");\nbreak;\ncase 'F': print(\"$grade is for needs retry\");\nbreak;\ndefault: print('$grade is invalid');\n}\n// ============================\n\n\n\n// ========== Loops/Iterators ===========\n\nfor (var i=0; i<4; i++){\nprint('I am iteration $i');\nwhile (i < 2) {\nprint('I am sub-iteration $i');\n}\n\nvar j;\ndo {\nj++;\nprint ('I am nested iteration $j');\n} while (j < i);\n}\n\n\n\n// =============================\n\n}\n",
+					"file": "/F/F/drive_r/10/dart/test.dart",
+					"file_size": 2133,
+					"file_write_time": 132194138840000000,
+					"settings":
+					{
+						"buffer_size": 1799,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"syntax",
+						"Set Syntax: Dart"
+					],
+					[
+						"install p",
+						"Package Control: Install Package"
+					],
+					[
+						"dart",
+						"Indentation: Reindent Lines"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/F/F/drive_r/10/dart"
+			],
+			"file_history":
+			[
+				"/F/F/drive_r/10/dart/Sublime Text Build 3211/Data/Packages/User/Package Control.sublime-settings"
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "F:\\F\\drive_r\\10\\dart"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/F/F/drive_r/10/dart/test.dart",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1799,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Dart/Dart.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,1,-32000,-32000,-1,-1,639,186,100,1090",
+			"project": "",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 115.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/F/F/drive_r/10/LL/config/default_https.conf.template",
+					"settings":
+					{
+						"buffer_size": 1625,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "server {\n    listen      80;\n    listen [::]:80;\n    server_name leaflab.us;\n\n    location / {\n        rewrite ^ https://$host$request_uri? permanent;\n    }\n\n    location ^~ /.well-known {\n        allow all;\n        root  /data/letsencrypt/;\n    }\n}\n\nserver {\n    listen      443           ssl http2;\n    listen [::]:443           ssl http2;\n    server_name               leaflab.us www.leaflab.us;\n\n    add_header                Strict-Transport-Security \"max-age=31536000\" always;\n\n    ssl_session_cache         shared:SSL:20m;\n    ssl_session_timeout       10m;\n\n    ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;\n    ssl_prefer_server_ciphers on;\n    ssl_ciphers               \"ECDH+AESGCM:ECDH+AES256:ECDH+AES128:!ADH:!AECDH:!MD5;\";\n\n    ssl_stapling              on;\n    ssl_stapling_verify       on;\n    resolver                  8.8.8.8 8.8.4.4;\n\n    root /var/www/html;\n    index index.php;\n\n    access_log /var/log/nginx/access.log;\n    error_log /var/log/nginx/error.log;\n\n    ssl_certificate           /etc/letsencrypt/live/leaflab.us/fullchain.pem;\n    ssl_certificate_key       /etc/letsencrypt/live/leaflab.us/privkey.pem;\n    ssl_trusted_certificate   /etc/letsencrypt/live/leaflab.us/chain.pem;\n\n    location / {\n        try_files $uri $uri/ /index.php?$args;\n    }\n\n    location ~ \\.php$ {\n        try_files $uri =404;\n        fastcgi_split_path_info ^(.+\\.php)(/.+)$;\n        fastcgi_pass wordpress:9000;\n        fastcgi_index index.php;\n        include fastcgi_params;\n        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;\n        fastcgi_param PATH_INFO $fastcgi_path_info;\n    }\n}",
+					"settings":
+					{
+						"buffer_size": 1624,
+						"line_ending": "Windows",
+						"name": "server {"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"syntax",
+						"Set Syntax: Dart"
+					],
+					[
+						"install p",
+						"Package Control: Install Package"
+					],
+					[
+						"dart",
+						"Indentation: Reindent Lines"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/F/F/drive_r/10/LL/config"
+			],
+			"file_history":
+			[
+				"/F/F/drive_r/10/dart/Sublime Text Build 3211/Data/Packages/User/Package Control.sublime-settings"
+			],
+			"find":
+			{
+				"height": 22.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"FQDN_OR_IP"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"leaflab.us"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "F:\\F\\drive_r\\10\\LL\\config"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/F/F/drive_r/10/LL/config/default_https.conf.template",
+							"semi_transient": true,
+							"settings":
+							{
+								"buffer_size": 1625,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1624,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1139,
+										1139
+									]
+								],
+								"settings":
+								{
+									"auto_name": "server {",
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 336.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 22.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,1,-1,-1,-1,-1,630,227,91,1131",
+			"project": "",
+			"replace":
+			{
+				"height": 70.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 115.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 5,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
